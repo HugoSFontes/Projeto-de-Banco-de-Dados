@@ -1,0 +1,6 @@
+select p.name, f.name, c.name from products as p
+join providers as f
+on f.id = p.id_providers
+join categories as c
+on c.id = p.id_categories
+where f.name = 'Sansul SA' and c.name = 'Imported';
