@@ -1,0 +1,2 @@
+select c.id, c.name from customers as c
+where c.id NOT IN (select locations.id_customers from locations);
