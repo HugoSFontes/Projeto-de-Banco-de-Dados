@@ -1,0 +1,5 @@
+select p.name, c.name from products as p
+join categories as c
+on c.id = p.id_categories
+where p.amount > 100 and p.id_categories IN (1,2,3,6,9)
+order by p.id_categories ASC;
